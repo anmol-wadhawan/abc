@@ -1,0 +1,57 @@
+SOL 1:
+
+import java.util.Scanner;
+class Base
+{
+	public void show()
+	{
+		System.out.println("Function called without object");
+	}
+}
+public class parent extends Base 
+{
+	public static void main(String[] a)
+	{
+		parent obj = new parent();
+		obj.show();
+	}
+}
+
+---------------------------------------------------
+
+SOL 2:
+
+import java.util.Scanner;
+
+
+public class constructor
+{
+	constructor(int x1)
+	{
+		super();
+	}
+	public static void main(String args[])
+	{
+		constructor o1 = new constructor(101);
+	}
+}
+
+------------------------------------------
+
+SOL 3:
+
+import java.util.Scanner;
+final class A
+{
+	A()
+	{
+		System.out.println("class can not be extended");
+	}
+}
+public class noextend extends A
+{
+	public static void main(String args[])
+	{
+		
+	}
+}
